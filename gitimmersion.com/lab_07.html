@@ -49,7 +49,7 @@
     <h1 class="lab_title"><em>passo  7</em>  Staging e Committing</h1>
 
      <p>
-         La filosofia operativa di git prescrive la necessit&agrave; di interagire con il sistema di controllo di versione solo quando effettivamente serve. &Egrave; possibile continuare ad apportare modifiche alla vostra directory di lavoro senza vincoli di sorta, e interagire con il controllo del codice sorgente solo se opportuno, permettendo la massima elasticit&agrave;. Git consente di organizzare le modifiche in modo che riflettano esattamente il lavoro svolto.
+         La filosofia operativa di git prescrive la necessit&agrave; di interagire con il sistema di controllo di versione solo quando effettivamente serve. &Egrave; possibile continuare ad apportare modifiche alla directory di lavoro senza vincoli di sorta, e interagire con il controllo del codice sorgente solo se opportuno, permettendo la massima elasticit&agrave;. Git consente di organizzare le modifiche in modo che riflettano esattamente il lavoro svolto.
 
          Si supponga, ad esempio, che siano stati modificati tre file (a.txt, b.txt e c.txt). Tutte le modifiche saranno messe in scena, ma si desidera che i cambiamenti in a.txt e b.txt appartengano ad un singolo commit. Le modifiche a c.txt non sono logicamente correlate alle prime, e dovrebbero essere in un commit separato .
 
@@ -59,9 +59,14 @@
 
 
 
-      <pre class="instructions">git add a.txt b.txt
+      <pre class="instructions">
+touch a.txt
+touch b.txt
+git add a.txt b.txt
 git commit -m "Changes for a and b"</pre>
-<pre class="instructions">git add c.txt
+<pre class="instructions">
+touch c.txt	
+git add c.txt
 git commit -m "Unrelated change to c"</pre>
 <p>Grazie alla separazione tra  staging e committing abbiamo la capacit&agrave; di decidere cosa mettere in ogni commit.</p>
   </div>
