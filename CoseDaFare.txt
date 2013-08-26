@@ -1,0 +1,24 @@
+1) Per abilitare un terminale remoto per l'host 10.31.61.8, utilizzare http://code.google.com/p/shellinabox/. Installarlo e poi avviarlo con il seguente
+comando:
+	shellinaboxd -b -t --port=5678 dove,
+		-t disabilita ssl (no certificati) 
+		-b background (equivalente a &)
+		-port=5678, ascolta sulla porta 5678
+
+2) Preparare le slides. Punti principali
+	a) creazione di un repository da zero.
+		a.1) Status: listare lo stato di un repository
+	b) creare files
+		b.1) Status: listare lo stato di un repository
+	c) metterli o meno in scena (staging)
+		c.1) Status: listare lo stato di un repository
+	d) commit (con commento in linea [-m] o con editing)
+		d.1) Status: listare lo stato di un repository
+		d.2) Log: listare le commit effettuate
+	e) creare un collegamento ad un repository remoto
+	f) Inviare le modifiche al repository remoto.
+	g) Branches
+		g.1) branch: listare i branch esistenti
+		g.2) checkout <branch>: posizionarsi su un branch esistente
+	h) Merges
+	i) Checkout (ritornare all'ultima commit o ad una scelta)
